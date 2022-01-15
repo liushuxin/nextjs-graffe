@@ -1,6 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 export default function handler(req, res) {
-  console.log(req.query);
-  res.status(200).json(req.query || { name: '你好' });
+  const values = [];
+  for (const [key, value] of Object.entries(req.query)) {
+    values.push({ key, value });
+  }
+  res.status(200).json(values || [{ key: 'name', value: '你好' }]);
 }
