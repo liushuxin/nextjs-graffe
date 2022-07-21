@@ -1,0 +1,18 @@
+.calcWrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+
+
+}
+.wrapper{
+    margin: 30px;
+    text-align: center;
+}
+.calcContent{
+    margin: 20px;
+
+}
+.divItem {
+    margin: 20px;
+}
