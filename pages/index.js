@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import Calculator from "./calculator/index";
+import FormComponent from "./form/index";
 
 export default function Home() {
   const [state, setState] = useState([]);
@@ -44,7 +45,7 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">SHUXINLIU </a>
         </h1>
 
-        {/* <label>输入key</label>
+        <label>输入key</label>
         <input
           onChange={(e) => {
             setInputKeyState(e.target.value);
@@ -76,9 +77,10 @@ export default function Home() {
               </div>
             );
           })}
-        </div> */}
+        </div>
       </main>
-      <Calculator />
+      {/* <Calculator /> */}
+      <FormComponent />
       <footer className={styles.footer}></footer>
     </div>
   );
